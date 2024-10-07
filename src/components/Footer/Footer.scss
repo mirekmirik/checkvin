@@ -1,0 +1,32 @@
+.footer {
+  background: #e9eef1;
+  &__container {
+    max-width: 501px;
+    padding: 24px 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  &__item {
+    font-family: FutuBk;
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 14px;
+    line-height: 16px;
+    white-space: nowrap;
+    padding: 0px 8px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .footer {
+    &__container {
+      grid-template-columns: 4fr 4fr;
+    }
+
+    &__item {
+        text-align: initial;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.nav-item {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  justify-self: center;
+  width: 100%;
+  cursor: initial;
+
+  &__button {
+    width: 95px;
+  }
+}

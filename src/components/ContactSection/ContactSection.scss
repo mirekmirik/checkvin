@@ -1,0 +1,24 @@
+.contact-section {
+  background: #f0f3f5;
+  &__container {
+    max-width: 850px;
+    padding: 50px 16px 40px 16px;
+  }
+
+  &__title {
+    margin-bottom: 37px;
+    color: #0190ca;
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+    font-weight: 400;
+    color: #3a3c3e;
+    font-family: FutuBk;
+  }
+
+  &__text {
+    margin-bottom: 37px;
+  }
+}

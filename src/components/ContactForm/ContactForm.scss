@@ -1,0 +1,33 @@
+.contact-form {
+  &__inputs-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 15px;
+    margin-bottom: 18px;
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__submit {
+    border-radius: 102px;
+    font-size: 18px;
+    line-height: 26px;
+    height: 57px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .contact-form {
+    &__inputs-wrapper {
+      grid-template-columns: auto;
+    }
+
+    &__textarea {
+        height: 150px;
+    }
+  }
+}

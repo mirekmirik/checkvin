@@ -1,0 +1,62 @@
+.service-card {
+  height: 308px;
+  border-radius: 20px;
+  position: relative;
+
+  &__text-wrapper {
+    align-items: center;
+    background: rgba(33, 38, 39, 0.3);
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    padding-top: 167px;
+    position: absolute;
+    top: 0;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+
+  &__price {
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    height: 38px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service-card {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .service-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .service-card {
+    height: 154px;
+
+    &__text-wrapper {
+      padding-top: 20px;
+    }
+  }
+}
