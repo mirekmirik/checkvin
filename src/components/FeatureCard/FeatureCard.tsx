@@ -1,7 +1,7 @@
 import Paragraph from "../Paragraph/Paragraph";
+import Heading from "../Heading/Heading";
 import { FeatureCard as IFeatureCard } from "../../types";
 import "./FeatureCard.scss";
-import Heading from "../Heading/Heading";
 
 const FeatureCard: React.FC<IFeatureCard> = ({
   description,

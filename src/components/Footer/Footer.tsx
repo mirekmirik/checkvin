@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { FOOTER_LIST } from "../../config/config";
 import Container from "../Container/Container";
+import { FOOTER_LIST } from "../../config/config";
 import "./Footer.scss";
 
 const Footer = () => {

@@ -2,7 +2,7 @@
   &__button {
     position: fixed;
     top: 1rem;
-    left: 1rem;
+    right: 1rem;
     z-index: 50;
     background: none;
     border: none;
@@ -56,15 +56,15 @@
   &__panel {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 50%;
     height: 100vh;
     background-color: #f7f7f7;
     z-index: 50;
-    transform: translateX(-100%);
+    transform: translateX(100%);
 
     &--open {
-      transform: translateX(0);
+      transform: translateX(0%);
     }
 
     .nav-list {

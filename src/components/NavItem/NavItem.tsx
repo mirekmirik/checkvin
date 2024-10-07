@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import "./NavItem.scss";
 import Button from "../Button/Button";
+import "./NavItem.scss";
 
 interface NavItemProps {
   name: string;
@@ -9,20 +9,22 @@ interface NavItemProps {
 
 const NavItem: React.FC<NavItemProps> = ({ link, name }) => {
   return (
-    <NavLink
-      to={`${link}`}
-      className={({ isActive, isPending }) =>
-        isPending
-          ? "nav-item pending"
-          : isActive
-          ? "nav-item active"
-          : "nav-item"
-      }
-    >
-      <Button className="nav-item__button" styling="outlined">
-        {name}
-      </Button>
-    </NavLink>
+    <li className="nav-item">
+      <NavLink
+        to={`${link}`}
+        className={({ isActive, isPending }) =>
+          isPending
+            ? "pending"
+            : isActive
+            ? "active"
+            : ""
+        }
+      >
+        <Button className="nav-item__button" styling="outlined">
+          {name}
+        </Button>
+      </NavLink>
+    </li>
   );
 };
 

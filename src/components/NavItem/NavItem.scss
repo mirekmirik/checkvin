@@ -12,3 +12,11 @@
     width: 95px;
   }
 }
+
+@media screen and (max-width: 760px) {
+  .nav-item {
+    &__button {
+      background-color: initial;
+    }
+  }
+}

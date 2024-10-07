@@ -1,6 +1,6 @@
-import { FEATURES_LIST } from "../../config/config";
 import Container from "../Container/Container";
 import FeatureCard from "../FeatureCard/FeatureCard";
+import { FEATURES_LIST } from "../../config/config";
 import "./FeatureSection.scss";
 
 const FeaturesSection = () => {

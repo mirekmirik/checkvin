@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
-import CheckvinLogo from "../Icons/CheckvinLogo";
 import NavItem from "../NavItem/NavItem";
 import { NavItem as INavItem } from "../../types";
+import CheckvinLogo from "../Icons/CheckvinLogo";
 import "./NavList.scss";
 
 interface NavListProps {
@@ -19,14 +19,12 @@ const NavList: React.FC<NavListProps> = ({ items }) => {
             <>
               <li className="nav-item nav-list__item nav-item--logo">
                 {i === mid && (
-                  <NavLink to="/" className="">
+                  <NavLink to="/">
                     <CheckvinLogo />
                   </NavLink>
                 )}
               </li>
-              <li key={i} className="nav-item nav-list__item">
-                <NavItem link={item.link} name={item.name} />
-              </li>
+              <NavItem link={item.link} name={item.name} />
             </>
           );
         })}
