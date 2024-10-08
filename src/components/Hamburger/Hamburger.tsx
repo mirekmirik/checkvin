@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NavList from "../NavList/NavList";
 import { NAV_LIST } from "../../config/config";
+import { useLocation } from "react-router-dom";
 import "./Hamburger.scss";
 
 const Hamburger = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const { pathname } = useLocation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    if (isOpen) {
+      toggleMenu();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
 
   return (
     <div className="hamburger-menu">
